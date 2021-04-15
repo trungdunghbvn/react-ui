@@ -1,0 +1,32 @@
+
+
+.Toast {
+  position: fixed;
+  z-index: 520;
+  right: 0px;
+  top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ToastWrapper {
+  position: absolute;
+  left: 0;
+  display: inline-flex;
+  opacity: 0;
+  transition: transform 400ms ease, opacity 400ms ease;
+  transform: translateX(var(--toast-translate-y-out));
+  width: max-content;
+}
+
+.ToastWrapper-enter,
+.ToastWrapper-exit {
+  transform: translateX(var(--toast-translate-y-out));
+  opacity: 0;
+}
+
+.ToastWrapper-enter-done {
+  transform: translateX(var(--toast-translate-y-in));
+  opacity: 1;
+}

@@ -1,8 +1,9 @@
 import React from "react";
 import styles from "./Modal.scss";
 import { classNames } from "../../utilities/css";
-import Close from "./close.svg";
+// import Close from "./close.svg";
 import { Backdrop } from "../Backdrop";
+import Close from '../../utilities/Icons/Close'
 // import { ReactComponent as Close } from './close.svg';
 
 export function Modal({
@@ -26,7 +27,8 @@ export function Modal({
         >
           {closeIcon && (
             <div className={styles.Close} onClick={onClose}>
-              <img src={Close} alt="close" />
+              {/* <img src={Close} alt="close" /> */}
+              <Close />
             </div>
           )}
           {children}
