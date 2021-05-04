@@ -3,11 +3,11 @@ import {
   currencyConvertDashboardUrl,
   emailWithLoveDashboardUrl,
   fbChatBoxDashboardUrl,
-  salesPopDashboardUrl
+  salesPopDashboardUrl,
 } from "./config";
 import styles from "./CrossSell.scss";
 
-export function CrossSell({ title, shop, listCrossSell, app }) {
+export function CrossSell({ title, shop, listCrossSell, app, highlyText }) {
   const listApps = [
     {
       appName: "Currency Converter Box ‑ BEST",
@@ -17,36 +17,36 @@ export function CrossSell({ title, shop, listCrossSell, app }) {
       description:
         "Best Currency Converter, Auto Currency Switcher On Location",
       dashboardUrl: `${currencyConvertDashboardUrl}?shop=${shop}`,
-      listingPageUrl: "https://apps.shopify.com/currency-converter-master"
+      listingPageUrl: "https://apps.shopify.com/currency-converter-master",
     },
     {
-      appName: "Sales Pop Master ‑ Sales Popup",
+      appName: "Sales Pop Master ‑ Countdown",
       appIcon:
         "https://apps.shopifycdn.com/listing_images/18d54dc3ff21731dc43145d85b05aeec/icon/0f9931d1ddccc42bb9723220926808ee.jpg?height=84&quality=90&width=84",
       price: "Free",
       description:
-        "Social Proof, Sales Pop Ups, Sales Pop, Countdown Timer-Stock",
+        "Sales Pop, Sales Pop Up, Notification, Countdown Timer-Stock",
       dashboardUrl: `${salesPopDashboardUrl}?shop=${shop}`,
-      listingPageUrl: "https://apps.shopify.com/sales-pop-master"
+      listingPageUrl: "https://apps.shopify.com/sales-pop-master",
     },
     {
-      appName: "Email With Love",
+      appName: "Thank You Email Marketing Tool",
       appIcon:
         "https://apps.shopifycdn.com/listing_images/7c320a641c5173b8b4fdda076318a836/icons/eb8d6fd691c55e91db1e37d0d3d23d69.png",
       price: "Free",
-      description: "Automated thank-you email to customers",
+      description: "Auto Thankyou email, Email marketing, Cart Recovery, Newsletter",
       dashboardUrl: `${emailWithLoveDashboardUrl}?shop=${shop}`,
-      listingPageUrl: "https://apps.shopify.com/email-with-love"
+      listingPageUrl: "https://apps.shopify.com/email-with-love",
     },
     {
-      appName: "Facebook Chat Box ‑ Live Chat",
+      appName: "Facebook Chat Box ‑ Marketing",
       appIcon:
         "https://apps.shopifycdn.com/listing_images/af9c031fdb1813a12cd313ef0421a3fb/icon/0f9931d1ddccc42bb9723220926808ee.jpg?height=84&quality=90&width=84",
       price: "Free",
       description:
-        "Live Chat, Free Chat Via Facebook Messenger, Facebook Channel",
+        "Live Chat, Free Chat Via Facebook Messenger, Auto Marketing",
       dashboardUrl: `${fbChatBoxDashboardUrl}?shop=${shop}`,
-      listingPageUrl: "https://apps.shopify.com/facebook-chat-box"
+      listingPageUrl: "https://apps.shopify.com/facebook-chat-box",
     },
     {
       appName: "Discount Master ‑ Quantity",
@@ -56,16 +56,16 @@ export function CrossSell({ title, shop, listCrossSell, app }) {
       description:
         "Quantity Discounts/Tiered, Countdown Timer, Stock Countdown",
       dashboardUrl: "",
-      listingPageUrl: "https://apps.shopify.com/discount-master"
+      listingPageUrl: "https://apps.shopify.com/discount-master",
     },
     {
       appName: "Upsell Cross‑Sell Smart Tool",
       appIcon:
         "https://apps.shopifycdn.com/listing_images/f0d5c01083c0e2ebb750b334c88b548b/icon/0f9931d1ddccc42bb9723220926808ee.jpg?height=84&quality=90&width=84",
       description:
-        "Upsell Product, Cross-sell, Discounted Upsells, Upsell Bundles",
+        "Product Bundle, Upsell Bundle, Cross-sell, Discounted Upsells",
       dashboardUrl: "",
-      listingPageUrl: "https://apps.shopify.com/upsell-cross-sell-smart-tool"
+      listingPageUrl: "https://apps.shopify.com/upsell-cross-sell-smart-tool",
     },
     {
       appName: "Recommended Product – Sales",
@@ -74,8 +74,17 @@ export function CrossSell({ title, shop, listCrossSell, app }) {
       description:
         "Recently Viewed Products, Personalized Recommendations, Sales",
       dashboardUrl: "",
-      listingPageUrl: "https://apps.shopify.com/recommended-product-sales"
-    }
+      listingPageUrl: "https://apps.shopify.com/recommended-product-sales",
+    },
+    {
+      appName: "Product Reviews Autoketing",
+      appIcon:
+        "https://apps.shopifycdn.com/listing_images/f0d5c01083c0e2ebb750b334c88b548b/icon/0f9931d1ddccc42bb9723220926808ee.jpg?height=84&quality=90&width=84",
+      description:
+        "Auto Product Reviews, Reviews App, Photo Reviews, Ratings App",
+      dashboardUrl: "",
+      listingPageUrl: "https://apps.shopify.com/product-reviews-autoketing",
+    },
   ];
 
   const listingPageUrl = (appName, app) => {
@@ -102,15 +111,16 @@ export function CrossSell({ title, shop, listCrossSell, app }) {
       case "top-pin":
         appSelected = listApps[6];
         break;
+      case "product-review":
+        appSelected = listApps[7];
+        break;
       default:
         break;
     }
-    return `${
-      appSelected.listingPageUrl
-    }?utm_source=in_app_admin&utm_medium=${app}`;
+    return `${appSelected.listingPageUrl}?utm_source=in_app_admin&utm_medium=${app}`;
   };
 
-  const getApp =(appName)=>{
+  const getApp = (appName) => {
     let appSelected = listApps[0];
     switch (appName) {
       case "currency":
@@ -134,16 +144,19 @@ export function CrossSell({ title, shop, listCrossSell, app }) {
       case "top-pin":
         appSelected = listApps[6];
         break;
+      case "product-review":
+        appSelected = listApps[7];
+        break;
       default:
         break;
     }
     return appSelected;
-  }
+  };
 
   const items = listCrossSell || [
-    { app: "top-pin", highly: true },
-    { app: "sales-pop"},
-    { app: "currency"}
+    { app: "product-review", highly: true },
+    { app: "top-pin" },
+    { app: "sales-pop" },
   ];
 
   const getListApp = () => {
@@ -154,8 +167,14 @@ export function CrossSell({ title, shop, listCrossSell, app }) {
             <img src={getApp(item.app).appIcon} alt="" />
           </div>
           <h4 className={styles.uiAppCardName}>{getApp(item.app).appName}</h4>
-          <p className={styles.uiAppCardDetails}>{getApp(item.app).description}</p>
-          {item.highly && <div className={styles.uiAppCardDetailsHighly}>Highly recommend</div>}
+          <p className={styles.uiAppCardDetails}>
+            {getApp(item.app).description}
+          </p>
+          {item.highly && (
+            <div className={styles.uiAppCardDetailsHighly}>
+              {highlyText || "Highly recommend"}
+            </div>
+          )}
         </div>
       </a>
     ));
@@ -168,9 +187,7 @@ export function CrossSell({ title, shop, listCrossSell, app }) {
         <div className={styles.Section}>
           <div className={styles.Title}>{title || "YOU MIGHT ALSO LIKE"}</div>
           <br />
-          <section className={styles.displayFlex}>
-            {getListApp()}
-          </section>
+          <section className={styles.displayFlex}>{getListApp()}</section>
         </div>
       </div>
     </div>
