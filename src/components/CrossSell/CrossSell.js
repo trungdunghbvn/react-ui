@@ -12,7 +12,7 @@ export function CrossSell({ title, shop, listCrossSell, app, highlyText }) {
     {
       appName: "Currency Converter Box ‑ BEST",
       appIcon:
-        "https://apps.shopifycdn.com/listing_images/2eb8bf799c282c87d7937f6a8e61e796/icon/0f9931d1ddccc42bb9723220926808ee.jpg?height=84&quality=90&width=84",
+        "https://cdn.autoketing.org/sdk-cdn/sales-pop/logo-app.jpg",
       price: "Free",
       description:
         "Best Currency Converter, Auto Currency Switcher On Location",
@@ -22,7 +22,7 @@ export function CrossSell({ title, shop, listCrossSell, app, highlyText }) {
     {
       appName: "Sales Pop Master ‑ Countdown",
       appIcon:
-        "https://apps.shopifycdn.com/listing_images/18d54dc3ff21731dc43145d85b05aeec/icon/0f9931d1ddccc42bb9723220926808ee.jpg?height=84&quality=90&width=84",
+        "https://cdn.autoketing.org/sdk-cdn/sales-pop/logo-app.jpg",
       price: "Free",
       description:
         "Sales Pop, Sales Pop Up, Notification, Countdown Timer-Stock",
@@ -32,7 +32,7 @@ export function CrossSell({ title, shop, listCrossSell, app, highlyText }) {
     {
       appName: "Thank You Email Marketing Tool",
       appIcon:
-        "https://apps.shopifycdn.com/listing_images/7c320a641c5173b8b4fdda076318a836/icons/eb8d6fd691c55e91db1e37d0d3d23d69.png",
+        "https://cdn.autoketing.org/sdk-cdn/sales-pop/logo-app.jpg",
       price: "Free",
       description: "Auto Thankyou email, Email marketing, Cart Recovery, Newsletter",
       dashboardUrl: `${emailWithLoveDashboardUrl}?shop=${shop}`,
@@ -41,7 +41,7 @@ export function CrossSell({ title, shop, listCrossSell, app, highlyText }) {
     {
       appName: "Facebook Chat Box ‑ Marketing",
       appIcon:
-        "https://apps.shopifycdn.com/listing_images/af9c031fdb1813a12cd313ef0421a3fb/icon/0f9931d1ddccc42bb9723220926808ee.jpg?height=84&quality=90&width=84",
+        "https://cdn.autoketing.org/sdk-cdn/sales-pop/logo-app.jpg",
       price: "Free",
       description:
         "Live Chat, Free Chat Via Facebook Messenger, Auto Marketing",
@@ -51,7 +51,7 @@ export function CrossSell({ title, shop, listCrossSell, app, highlyText }) {
     {
       appName: "Discount Master ‑ Quantity",
       appIcon:
-        "https://apps.shopifycdn.com/listing_images/f0d5c01083c0e2ebb750b334c88b548b/icon/0f9931d1ddccc42bb9723220926808ee.jpg?height=84&quality=90&width=84",
+        "https://cdn.autoketing.org/sdk-cdn/sales-pop/logo-app.jpg",
       price: "Free plan available",
       description:
         "Quantity Discounts/Tiered, Countdown Timer, Stock Countdown",
@@ -61,7 +61,7 @@ export function CrossSell({ title, shop, listCrossSell, app, highlyText }) {
     {
       appName: "Upsell Cross‑Sell Smart Tool",
       appIcon:
-        "https://apps.shopifycdn.com/listing_images/f0d5c01083c0e2ebb750b334c88b548b/icon/0f9931d1ddccc42bb9723220926808ee.jpg?height=84&quality=90&width=84",
+        "https://cdn.autoketing.org/sdk-cdn/sales-pop/logo-app.jpg",
       description:
         "Product Bundle, Upsell Bundle, Cross-sell, Discounted Upsells",
       dashboardUrl: "",
@@ -70,7 +70,7 @@ export function CrossSell({ title, shop, listCrossSell, app, highlyText }) {
     {
       appName: "Recommended Product – Sales",
       appIcon:
-        "https://apps.shopifycdn.com/listing_images/f0d5c01083c0e2ebb750b334c88b548b/icon/0f9931d1ddccc42bb9723220926808ee.jpg?height=84&quality=90&width=84",
+        "https://cdn.autoketing.org/sdk-cdn/sales-pop/logo-app.jpg",
       description:
         "Recently Viewed Products, Personalized Recommendations, Sales",
       dashboardUrl: "",
@@ -79,7 +79,7 @@ export function CrossSell({ title, shop, listCrossSell, app, highlyText }) {
     {
       appName: "Product Reviews Autoketing",
       appIcon:
-        "https://apps.shopifycdn.com/listing_images/f0d5c01083c0e2ebb750b334c88b548b/icon/0f9931d1ddccc42bb9723220926808ee.jpg?height=84&quality=90&width=84",
+        "https://cdn.autoketing.org/sdk-cdn/sales-pop/logo-app.jpg",
       description:
         "Auto Product Reviews, Reviews App, Photo Reviews, Ratings App",
       dashboardUrl: "",
