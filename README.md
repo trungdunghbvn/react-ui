@@ -14,6 +14,12 @@
 - [On Off component](#on-off)
 - [Cross sell](#cross-sell)
 
+## Mục lục
+  1. [Getting Started](#getting-started)
+  2. [On Off component](#on-off)
+  3. [Cross sell](#cross-sell)
+  4. [Toast](#toast)
+
 ## Getting Started
 
 ```sh
@@ -41,7 +47,7 @@ Defaults to `true` (`true`, `false`)
 --------------------
 
 
-### Cross Sell component
+## Cross Sell
 
 ##### Component
 ```$xslt
@@ -59,3 +65,23 @@ list app `"currency", "sales-pop", "email-with-love", "facebook-chat", "discount
 
 **`app?: string`**
 --------------------
+
+## Toast
+
+```javascript
+<Toast title="Success" duration={500000} open={active} onDismiss={tongleActive} />
+```
+
+**title: string**
+
+**background: string**
+Defaults: `#FFFFFF`
+
+**color: string**
+Defaults: `#FFF`
+
+**duration: string**
+Defaults: `#5000`
+
+**error: Booleal**
+Defaults: `false`
