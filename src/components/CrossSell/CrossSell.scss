@@ -1,20 +1,19 @@
 $mobileWidth: 768px;
 $mobileIphone5: 320px;
 *,
-  :after,
-  :before {
-    box-sizing: border-box;
-  }
+:after,
+:before {
+  box-sizing: border-box;
+}
 @media only screen and (max-width: $mobileWidth) {
   .displayFlex {
     // display: grid !important;
     justify-content: space-between;
     flex-wrap: wrap;
-    a{
-      border: none!important;
-      margin-left: 0!important;
-      padding-left: 0!important;
-
+    a {
+      border: none !important;
+      margin-left: 0 !important;
+      padding-left: 0 !important;
     }
   }
 }
@@ -24,25 +23,29 @@ $mobileIphone5: 320px;
   margin: 42px auto;
   display: flex;
   flex-wrap: wrap;
-  .Card{
+  .Card {
     background-color: var(--p-surface, white);
-    box-shadow: var(--p-card-shadow, 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15));
+    box-shadow: var(
+      --p-card-shadow,
+      0 0 0 1px rgba(63, 63, 68, 0.05),
+      0 1px 3px 0 rgba(63, 63, 68, 0.15)
+    );
     outline: 0.1rem solid transparent;
     width: 100%;
-    @media (min-width: 30.625em){
+    @media (min-width: 30.625em) {
       border-radius: var(--p-border-radius-wide, 3px);
     }
   }
-  .Section{
+  .Section {
     border-top-left-radius: var(--p-border-radius-wide, 3px);
     border-top-right-radius: var(--p-border-radius-wide, 3px);
     padding: 1.6rem;
     width: 100%;
-    @media (min-width: 30.625em){
-        padding: 2rem;
+    @media (min-width: 30.625em) {
+      padding: 2rem;
     }
   }
-  .Title{
+  .Title {
     font-size: 23px;
     font-weight: 600;
     // color: #212529;
@@ -54,7 +57,6 @@ $mobileIphone5: 320px;
   @media (min-width: 30.625em) {
     padding: 0 2rem;
   }
-
 }
 
 .displayFlex {
@@ -64,7 +66,6 @@ $mobileIphone5: 320px;
     text-decoration: none;
 
     .uiAppCard {
-
       // .uiAppCardIcon {
       //   -webkit-box-shadow: 1px 2px 14px 8px #c4cdd5;
       //   box-shadow: 1px 2px 14px 8px #c4cdd5;
@@ -82,13 +83,13 @@ $mobileIphone5: 320px;
     border-right: 1px solid #dfe5eb;
     cursor: pointer;
     margin-left: 10px;
-    &:first-child{
+    &:first-child {
       margin-left: 0;
       padding-left: 0;
     }
-    &:last-child{
+    &:last-child {
       padding-right: 0;
-      border-right: unset!important;
+      border-right: unset !important;
     }
     .uiAppCard {
       display: -ms-inline-grid;
@@ -96,7 +97,7 @@ $mobileIphone5: 320px;
       -ms-grid-columns: 58px 0 30px 0 auto 0 1fr;
       grid-template-columns: 58px 30px auto 1fr;
       grid-column-gap: 0;
-      grid-template-areas: "icon icon name name""icon icon context context""icon icon tagline tagline""icon icon rating rating";
+      grid-template-areas: "icon icon name name" "icon icon context context" "icon icon tagline tagline" "icon icon rating rating";
       max-width: 350px;
       color: #637381;
 
@@ -143,7 +144,7 @@ $mobileIphone5: 320px;
         grid-area: tagline;
         margin: 4px 0 0;
       }
-      .uiAppCardDetailsHighly{
+      .uiAppCardDetailsHighly {
         color: #bf0711;
       }
     }

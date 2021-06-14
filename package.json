@@ -27,7 +27,8 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "react-transition-group": "^4.4.1"
+    "react-transition-group": "^4.4.1",
+    "lodash": "^4.17.4"
   },
   "peerDependencies": {
     "prop-types": "^15.5.4",
