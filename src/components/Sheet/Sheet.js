@@ -5,7 +5,7 @@ import debounce from "lodash/debounce";
 import { Backdrop } from "../Backdrop";
 import { classNames } from "../../utilities/css";
 import { layer, overlay } from "../shared";
-
+import {Portal} from '../Portal';
 import { navigationBarCollapsed } from "../../utilities/breakpoints";
 
 import styles from "./Sheet.scss";
@@ -31,6 +31,7 @@ export function Sheet({
   onEntered,
   onExit,
   accessibilityLabel,
+  className
 }) {
   const container = useRef(null);
   const [isNavigationCollapsed, setIsNavigationCollapsed] = useState(
@@ -59,7 +60,7 @@ export function Sheet({
   }, []);
 
   return (
-    <div>
+    <Portal idPrefix="sheet" classPrefix={className}>
       <CSSTransition
         nodeRef={container}
         classNames={
@@ -90,6 +91,6 @@ export function Sheet({
         </div>
       </CSSTransition>
       {open && <Backdrop transparent onClick={onClose} />}
-    </div>
+    </Portal>
   );
 }

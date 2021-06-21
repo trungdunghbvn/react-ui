@@ -1,31 +1,31 @@
 export const scrollable = {
-  props: {'data-polaris-scrollable': true},
-  selector: '[data-polaris-scrollable]',
+  props: {'data-autoketing-scrollable': true},
+  selector: '[data-autoketing-scrollable]',
 };
 
 export const overlay = {
-  props: {'data-polaris-overlay': true},
-  selector: '[data-polaris-overlay]',
+  props: {'data-autoketing-overlay': true},
+  selector: '[data-autoketing-overlay]',
 };
 
 export const layer = {
-  props: {'data-polaris-layer': true},
-  selector: '[data-polaris-layer]',
+  props: {'data-autoketing-layer': true},
+  selector: '[data-autoketing-layer]',
 };
 
 export const unstyled = {
-  props: {'data-polaris-unstyled': true},
-  selector: '[data-polaris-unstyled]',
+  props: {'data-autoketing-unstyled': true},
+  selector: '[data-autoketing-unstyled]',
 };
 
 export const dataPolarisTopBar = {
-  props: {'data-polaris-top-bar': true},
-  selector: '[data-polaris-top-bar]',
+  props: {'data-autoketing-top-bar': true},
+  selector: '[data-autoketing-top-bar]',
 };
 
 export const headerCell = {
-  props: {'data-polaris-header-cell': true},
-  selector: '[data-polaris-header-cell]',
+  props: {'data-autoketing-header-cell': true},
+  selector: '[data-autoketing-header-cell]',
 };
 
 export const portal = {
