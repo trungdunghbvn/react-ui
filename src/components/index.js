@@ -4,3 +4,6 @@ export {CrossSell} from './CrossSell';
 export {Modal} from './Modal';
 export {Backdrop} from './Backdrop';
 export {Toast} from './Toast';
+export {Sheet} from './Sheet';
+export {PortalsManager} from './PortalsManager';
+export {AppProvider} from './AppProvider';
