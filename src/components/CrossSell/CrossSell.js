@@ -85,6 +85,15 @@ export function CrossSell({ title, shop, listCrossSell, app, highlyText }) {
       dashboardUrl: "",
       listingPageUrl: "https://apps.shopify.com/product-reviews-autoketing",
     },
+    {
+      appName: "Popup Sign up‑Sales Pop Banner",
+      appIcon:
+        "https://cdn.autoketing.org/sdk-cdn/sales-pop/logo-app.jpg",
+      description:
+        "NEW app for sign up popup, discount banners, big promotion ",
+      dashboardUrl: "",
+      listingPageUrl: "https://apps.shopify.com/popup-sign-up-sales-pop-banner",
+    },
   ];
 
   const listingPageUrl = (appName, app) => {
@@ -113,6 +122,9 @@ export function CrossSell({ title, shop, listCrossSell, app, highlyText }) {
         break;
       case "product-review":
         appSelected = listApps[7];
+        break;
+      case "popup-sign":
+        appSelected = listApps[8];
         break;
       default:
         break;
@@ -146,6 +158,9 @@ export function CrossSell({ title, shop, listCrossSell, app, highlyText }) {
         break;
       case "product-review":
         appSelected = listApps[7];
+        break;
+      case "popup-sign":
+        appSelected = listApps[8];
         break;
       default:
         break;
